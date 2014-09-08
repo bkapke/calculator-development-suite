@@ -21,6 +21,10 @@ $(document).ready(function () {
         appPatternLoading.resolve();
     });
     
+    $("#grunt-automation-tab").load("pages/grunt-automation.html", function(){
+        appPatternLoading.resolve();
+    });
+    
     var allPanesLoaded = $.when(appPatternLoading);
     
     allPanesLoaded.done(function() {
