@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Unit Tests</title>
+    <script src="../lib/jquery/jquery.2.1.1.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="../lib/qunit/qunit.1.14.0.css" />
+    <link type="text/css" rel="stylesheet" href="css/test-index.css" />
+    <link type="text/css" rel="stylesheet" href="../css/normalize.css" >
+    <link type="text/css" rel="stylesheet" href="../css/calculator.css" >
+    <!-- application js -->
+    
+    <!--
+        * these are the development files they are concatenated into one
+        * Application.js file no need to include all sources and add extra
+        * requests.  simply include the concatenated Application.js for
+        * production.
+        
+    <script src="../js/ApplicationModulesMap.js"></script>
+    <script src="../js/Calculator.js"></script>
+    <script src="../js/CalculatorUIController.js"></script>
+    -->
+    
+    <!-- Development (readable) version of Application.js -->
+    <script src="../dist/js/Application.js"></script>
+    
+    <!-- uglified and compressed version of application.js -->
+    <!--<script src="../dist/js/Application.min.js"></script>-->
+    
+    <!-- include qunit -->
+    <script src="../lib/qunit/qunit.1.14.0.js"></script>
+
+    <!-- unit tests -->
+    <script src="unit-tests/CalculatorTest.js"></script>
+    <script src="unit-tests/CalculatorUIControllerTest.js"></script>
+    
+    <script>
+    </script>
+</head>
+
+<body>
+      <div class="test">
+        <!-- qunit divs -->
+        <div id="qunit"></div>
+        <div id="qunit-fixture">
+            <div class='calculator'></div>
+        </div>
+      </div>
+</body>
+</html>

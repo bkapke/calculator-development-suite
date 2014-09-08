@@ -1,0 +1,39 @@
+/*
+ * Included are styles and classes to control the tabs
+ */
+
+.tabs {
+    list-style: none;
+}
+
+.tabs {
+    display: inline-block;
+    padding-left:15px;
+    margin-top:0px;
+}
+
+.tabs li a {
+    display:block;
+    color:blue;
+    padding:6px;
+    border: thin transparent solid;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.tabs a:hover {
+    text-decoration: underline;
+}
+
+.tabPane {
+    display:none;
+}
+
+.activeTab {
+    display:block;
+}
+
+a.activeTabLink {
+    color:white !important;
+    background-color: blue;
+}

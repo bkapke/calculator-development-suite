@@ -1,0 +1,41 @@
+@import url("normalize.css");
+
+body, html {
+    font-family: sans-serif !important;
+}
+
+.wrapper {
+    width:760px;
+    margin: 0 60px 60px 100px;
+}
+
+.right {
+    float: right
+}
+
+.left {
+    float: left
+}
+
+a:link {
+    text-decoration: none;
+    color:blue;
+}
+a:active, a:visited {
+    color:blue;
+}
+
+iframe {
+    width:760px;
+    height:460px;
+    border:none;
+}
+
+.column-nav {
+    width:220px;
+    position: fixed;
+    left: 920px;
+    /*border: thin #333333 solid;*/
+}
+
+

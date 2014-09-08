@@ -1,0 +1,48 @@
+                <h2>Module Basics</h2>
+                <pre>
+                    <code class="js">        
+        
+        /*
+         * create the namespaces on which to store the modules, these will be public.
+         *
+         * for an advanced look at this check out :
+         * http://addyosmani.com/blog/essential-js-namespacing/
+         *
+         */
+        var modules =  {
+            messageModule : {};
+        };
+        
+        /*
+         * Create some module, consists of a constructor and some methods wrapped in an
+         * anonymous function.  This will be self-calling and so you can add the
+         * module to the namespace before closing the anonymous function call.
+         */
+                    
+        (function() {
+            var MessageModule = function() {
+            
+            };
+            
+            MessageModule.prototype.getMessage = function() {
+                return "Hello World";
+            };
+            
+            MessageModule.prototype.getErrorMessage = function() {
+                alert("Error! Oh The Humanity!");
+            };
+            
+            modules.messageModule = new MessageModule();
+            
+        })();
+        
+        var messenger = modules.messageModule
+        
+        alert(messenger.getMessage());
+        // alerts "Hello World"
+        
+        messenger.getErrorMessage();
+        // alerts "Error! Oh The Humanity!"
+        
+                    </code>
+                </pre>
