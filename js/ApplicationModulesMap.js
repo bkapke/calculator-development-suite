@@ -28,11 +28,3 @@ function extend( ns, ns_string ) {
 extend(modules, 'utilities.calculator');
 extend(modules, 'utilities.calculatorUIController');
 extend(modules, 'ui.Tabs');
-
-//generates an object like so...
-//{
-//	"utilities": {
-//		"calculator": {},
-//		"calculatorUIController": {}
-//	}
-//}
