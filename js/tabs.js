@@ -7,9 +7,7 @@
 //var Tabs = {};
 
 (function() {
-    function Tabs() {
-        //this.animate = false;
-    }
+    function Tabs() {}
     
     Tabs.prototype.bindTabs = function($tabNav, $tabPanes) {
         var that = this;
@@ -28,12 +26,10 @@
             e.preventDefault();
             $tabPanes.find("." + activeTabClass).removeClass(activeTabClass);
             $(tabToShow).addClass(activeTabClass);
-            
             $tabNav.find("." + activeTabLinkClass).removeClass(activeTabLinkClass);
             $tempLink.addClass(activeTabLinkClass);
         });
     };
     
     modules.ui.Tabs = Tabs;
-    
 })();

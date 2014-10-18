@@ -15,9 +15,10 @@
 
     <!-- Concatenated css for distribution -->
     <link type="text/css" rel="stylesheet" href="dist/css/Application.css" >
+    <script src="dist/js/Application.js"></script>
     
     <!-- Minified JS files for distribution -->
-    <script src="dist/js/Application.min.js"></script>
+    <!--<script src="dist/js/Application.min.js"></script>-->
 
 </head>
 
@@ -31,8 +32,8 @@
             <ul class="tabs" id="main-nav-tabs">
                 <li><a href="#overview-tab" class="activeTabLink">Project Overview</a></li>
                 <li><a href="#application-pattern-tab">Application Pattern</a></li>
-                <li><a href="#application-overview-tab">Sample Application Overview</a></li>
-                <li><a href="#application-tab">Sample Application</a></li>
+                <li><a href="#application-overview-tab">Application Overview</a></li>
+                <li><a href="#application-tab">The Application</a></li>
                 <li><a href="#grunt-automation-tab">Grunt Automation</a></li>
                 <li><a href="#unit-tests-tab">Unit Tests</a></li>
             </ul>
@@ -47,24 +48,28 @@
             <!-- application overview (pages/application-overview.html)-->
             <div class="tabPane" id="application-overview-tab"></div>
             
-            <!-- unit tests (loaded in an iframe from: development/unit-tests.html) -->
-            <div class="tabPane" id="unit-tests-tab">
-                <h2>Unit Tests</h2>
-                <!--<a class="unit-test-link" href="development/unit-tests.html">Unit Test Index Page</a>-->
-                <iframe src="development/unit-tests.html"></iframe>
-            </div>
-            
             <!-- using grunt (pages/grunt-automation.html)-->
             <div class="tabPane" id="grunt-automation-tab"></div>
             
             <!-- This will be loaded by the calculator api it is dynamically generated -->
             <div class="tabPane" id="application-tab">
                 <h2>Calculator</h2>
+                <hr>
                 <div id="calculator"></div>
             </div>
             
             <!-- module pattern basics (pages/application-pattern.html)-->
             <div class="tabPane" id="application-pattern-tab"></div>
+            
+            <!-- unit tests (loaded in an iframe from: development/unit-tests.html) -->
+            <div class="tabPane" id="unit-tests-tab">
+                <h2>Unit Tests</h2>
+                <hr>
+                <p>Represented below is all of the configured unit tests for this applications JavaScript.</p>
+                <!--<a class="unit-test-link" href="development/unit-tests.html">Unit Test Index Page</a>-->
+                <iframe src="development/unit-tests.html"></iframe>
+            </div>
+            
         </div>
     </div>
     

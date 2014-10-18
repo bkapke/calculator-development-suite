@@ -13,6 +13,7 @@ $(document).ready(function () {
      * load the tab panes dynamically
      */
     var appPatternLoading = $.Deferred();
+        gruntAutomationLoading = $.Deferred();
     
     
     $("#overview-tab").load("pages/overview.html");
@@ -22,10 +23,10 @@ $(document).ready(function () {
     });
     
     $("#grunt-automation-tab").load("pages/grunt-automation.html", function(){
-        appPatternLoading.resolve();
+        gruntAutomationLoading.resolve();
     });
     
-    var allPanesLoaded = $.when(appPatternLoading);
+    var allPanesLoaded = $.when(appPatternLoading, gruntAutomationLoading);
     
     allPanesLoaded.done(function() {
         highlightSyntax();        
